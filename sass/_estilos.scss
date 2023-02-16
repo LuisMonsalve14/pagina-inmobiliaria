@@ -1,0 +1,114 @@
+@use "componentes";
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.nav{
+    position:relative;
+    .container-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: componentes.$color-principal;
+        align-items: center;
+    }
+
+    .img-header{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+.sec-search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20rem;
+   
+    
+    
+}
+
+.sec-card{
+    width: 100%;
+    margin-top: 9rem;
+    
+   .main-card{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+    .container-card{
+      margin: 0 2rem 2rem 2rem ;
+      
+        
+    }
+ 
+   
+    
+   
+}
+}
+
+
+@media (max-width:768px){
+    .nav{
+        position: static;
+        .container-nav{
+            .logo{
+                a{
+                    img{
+                        width: 200px;
+                    }
+
+                }
+            }
+        }
+    }
+    .sec-search{
+        position: static;
+        margin-top: 3rem;
+      
+        .search-property{
+            width: 400px;
+            padding: 1rem ;
+
+            .first{
+                a{
+                    font-size: 12px;
+                    font: 500;
+                }
+            }
+            .two{
+                input{
+                    width: 120px;
+                }
+
+            }
+          
+        }
+    }
+    .btn-main{
+        padding: 0.15ex 0.75rem;
+   
+        font-weight: 700;
+        font-size: 0.50rem;
+        line-height: 10px;
+        text-align: center;
+    }
+    .sec-card{
+        margin-top: 3rem;
+       
+    }
+    
+
+}
